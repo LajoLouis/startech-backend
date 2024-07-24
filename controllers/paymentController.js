@@ -23,7 +23,7 @@ exports.initiatePayment = async (req, res) => {
       tx_ref: orderId,
       amount,
       currency,
-      redirect_url: "http://localhost:5173/thank-you",
+      redirect_url: "https://startech-ecom-app-navy.vercel.app/thank-you",
       customer: {
         email: user.email,
         name: `${user.firstName} ${user.lastName}`,
